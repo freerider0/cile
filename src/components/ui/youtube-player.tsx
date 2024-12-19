@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { Play } from 'lucide-react'
+import Image from 'next/image'
 
 interface YouTubePlayerProps {
   videoId: string
@@ -41,11 +42,13 @@ export function YouTubePlayer({ videoId, title, thumbnailQuality = 'maxres' }: Y
       aria-label={`Play ${title}`}
     >
       {/* Thumbnail */}
-      <img
+      <Image
         src={thumbnailUrl}
         alt={title}
-        className="absolute top-0 left-0 w-full h-full object-cover"
+        fill
+        className="object-cover"
         loading="lazy"
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
       />
       
       {/* Play Button Overlay */}

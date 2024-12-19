@@ -32,7 +32,7 @@ export default function TestimonialsSection() {
               className="p-6 rounded-lg bg-slate-50"
             >
               <blockquote className="text-lg text-slate-700 italic mb-4">
-                "{testimonial.quote}"
+                &ldquo;{testimonial.quote}&rdquo;
               </blockquote>
               <div className="text-right">
                 <p className="font-semibold text-slate-900">{testimonial.author}</p>
