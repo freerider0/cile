@@ -1,7 +1,6 @@
 'use client'
 import Image from 'next/image'
 import Mason from '/public/assets/Logo-CLIE.png'
-import { YouTubePlayer } from '../ui/youtube-player'
 
 export default function HeroSection() {
   return (
