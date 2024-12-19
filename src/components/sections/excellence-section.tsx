@@ -3,7 +3,7 @@ import { Card, CardHeader, CardContent } from "@/components/ui/card"
 
 const excellencePoints = [
   "Programas cuidadosamente estructurados",
-  "Formadores altamente calificados",
+  "Formadores altamente cualificado",
   "Contenido actualizado y relevante",
   "Estándares internacionales"
 ]
