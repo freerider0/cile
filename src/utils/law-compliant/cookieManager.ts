@@ -28,10 +28,22 @@ export const resetClientPreferences = () => {
   Cookies.remove(COOKIE_PREFERENCES_KEY, { path: '/' });
 };
 
+// Add custom type definitions for GTM
+interface GTMDataLayer {
+  'gtm.start': number;
+  event: string;
+  [key: string]: unknown;
+}
+
+interface WindowWithGTM extends Window {
+  dataLayer: GTMDataLayer[];
+}
+
 export const initializeGTM = (preferences: CookiePreferences) => {
   if (typeof window !== 'undefined') {
-    (window as any).dataLayer = (window as any).dataLayer || [];
-    (window as any).dataLayer.push({
+    const gtmWindow = window as unknown as WindowWithGTM;
+    gtmWindow.dataLayer = gtmWindow.dataLayer || [];
+    gtmWindow.dataLayer.push({
       'gtm.start': new Date().getTime(),
       event: 'gtm.js',
       ...preferences
