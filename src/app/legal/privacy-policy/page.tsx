@@ -1,5 +1,6 @@
 import { Metadata } from "next"
 import { companyLegalInfo } from "@/config/legal-config"
+import legalInfo from "../legal-info.json"
 
 // Types
 interface PrivacyPolicySection {
