@@ -1,42 +1,22 @@
 export type BusinessType = 
-  | 'ecommerce'
-  | 'marketplace'
-  | 'saas'
-  | 'professional_services'
-  | 'healthcare'
-  | 'financial_services'
-  | 'gaming'
-  | 'social_network'
-  | 'educational'
-  | 'crypto'
-  | 'real_estate'
-  | 'travel'
-  | 'food_delivery'
-  | 'subscription_services'
-  | 'digital_content'
-  | 'iot_services'
-  | 'ai_services'
-  | 'legal_services'
-  | 'advertising'
+  | "all" 
+  | "ecommerce" 
+  | "saas" 
+  | "healthcare" 
+  | "fintech" 
+  | "professional_services";
 
-export type RegulationType =
-  | 'RGPD'
-  | 'LOPDGDD'
-  | 'LSSI-CE'
-  | 'Consumer Rights'
-  | 'AML'
-  | 'KYC'
-  | 'PSD2'
-  | 'MiFID II'
-  | 'GDPR'
-  | 'ePrivacy'
-  | 'Digital Services Act'
-  | 'Digital Markets Act'
-  | 'AI Act'
-  | 'Data Act'
-  | 'NIS2'
-  | 'eIDAS'
-  | 'Platform-to-Business'
+export type RegulationType = 
+  | "RGPD" 
+  | "LSSI-CE" 
+  | "LOPDGDD" 
+  | "ePrivacy" 
+  | "Digital Services Act"
+  | "Ley de Propiedad Intelectual"
+  | "Ley de Marcas"
+  | "Directiva 2001/29/CE"
+  | "Código Civil"
+  | "LPI";
 
 export interface LegalReference {
   name: string
