@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
-import { Script } from '../config/scripts';
+import { useState } from 'react';
+import { Script } from '@/config/scripts';
 
 export const useScriptManager = (initialScripts: Script[]) => {
   const [enabledScripts, setEnabledScripts] = useState<Script[]>(initialScripts);
