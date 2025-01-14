@@ -9,7 +9,6 @@ import BenefitsSection from "@/components/sections/benefits-section"
 import TestimonialsSection from "@/components/sections/testimonials-section"
 import ExcellenceSection from "@/components/sections/excellence-section"
 import ContactSection from "@/components/sections/contact-section"
-import Footer from "@/components/sections/footer"
 import { BeAMason } from "@/components/sections/be-a-mason"
 import { Videoslp } from "@/components/sections/videoslp"
 import { HeroText } from "@/components/sections/hero-text"
@@ -38,7 +37,7 @@ export default function LandingPage() {
       <ExcellenceSection />
       <NotForYouSection />
       <ContactSection />
-      <Footer />
+     
     </main>
   )
 }
