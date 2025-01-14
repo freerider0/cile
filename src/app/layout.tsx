@@ -1,4 +1,4 @@
-import { initializeGTM, initializeGTMNoscript } from '@/utils/law-compliant/cookieManager';
+//import { initializeGTM, initializeGTMNoscript } from '@/utils/law-compliant/cookieManager';
 import { f37WicklowBlack } from './fonts'
 import './globals.css'
 import { CookieManagerWrapper } from '@/components/law-compliant/CookieManagerWrapper';

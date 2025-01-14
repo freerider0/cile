@@ -16,7 +16,7 @@ export const ScriptManager: React.FC<ScriptManagerProps> = ({ scripts }) => {
         scriptElement.src = script.src;
         if (script.async) scriptElement.async = true;
         if (script.defer) scriptElement.defer = true;
-        if (script.onload) scriptElement.onload = new Function(script.onload) as any;
+        if (script.onload) scriptElement.onload = new Function(script.onload) as () => void;
         document.body.appendChild(scriptElement);
       }
     });

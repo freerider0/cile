@@ -17,7 +17,7 @@ export const CookieManager = ({
   sticky = false,
   initialHasInteracted
 }: CookieManagerProps) => {
-  const { preferences, updatePreferences, isOpen, openManager, closeManager } = useCookieManager();
+  const {  updatePreferences, isOpen, openManager, closeManager } = useCookieManager();
   const [showBanner, setShowBanner] = useState(!initialHasInteracted);
 
   const handleUpdatePreferences = (newPreferences: CookiePreferences) => {

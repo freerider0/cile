@@ -600,12 +600,12 @@ export const companyLegalInfo: CompanyLegalInfo = {
   }
 } 
 
-function isClauseRequired(businessTypes: BusinessType[], clauseId: string): boolean {
+export function isClauseRequired(businessTypes: BusinessType[], clauseId: string): boolean {
   const clause = optionalClauses.find(c => c.id === clauseId)
   return clause?.required && businessTypes.some(type => clause.applicableTo.includes(type)) || false
 }
 
-function getApplicableClauses(businessTypes: BusinessType[]): OptionalClause[] {
+export function getApplicableClauses(businessTypes: BusinessType[]): OptionalClause[] {
   return optionalClauses.filter(clause => 
     businessTypes.some(type => clause.applicableTo.includes(type))
   )
