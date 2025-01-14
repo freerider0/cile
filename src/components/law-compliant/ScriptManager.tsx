@@ -1,5 +1,7 @@
+'use client'
+
 import { useEffect } from 'react';
-import { Script } from '../config/scripts';
+import { Script } from '@/config/scripts';
 
 interface ScriptManagerProps {
   scripts: Script[];

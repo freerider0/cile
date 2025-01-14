@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react';
-import { CookiePreferences, getClientPreferences, setClientPreferences, COOKIE_PREFERENCES_KEY, initializeGTM } from '../../utils/law-compliant/cookieManager';
+import { CookiePreferences, getClientPreferences, setClientPreferences, initializeGTM } from '../../utils/law-compliant/cookieManager';
 
 export const useCookieManager = () => {
   const [preferences, setPreferencesState] = useState<CookiePreferences | null>(null);
