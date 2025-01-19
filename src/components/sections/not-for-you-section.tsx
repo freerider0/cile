@@ -1,49 +1,51 @@
 "use client"
 
 import { Card, CardContent } from "@/components/ui/card"
+import { Section } from "../section"
 
 const reasons = [
   {
-    title: "Buscan beneficios económicos o intereses privados",
-    description: "Nuestra misión no está diseñada para enriquecer a nadie personalmente ni para servir intereses particulares. Si tu enfoque principal es obtener ventajas financieras, este no es el espacio adecuado."
+    title: "Personas con Intolerancia hacia la Diversidad",
+    description: "Aquellos que no están dispuestos a aceptar y respetar diferentes opiniones, culturas o creencias."
   },
   {
-    title: "Buscan beneficios inmediatos sin aportar a cambio",
-    description: "Si solo te interesa lo que puedes obtener, y no estás dispuesto a compartir, colaborar o contribuir, este no es tu espacio."
+    title: "Individuos con Motivaciones Exclusivamente Materiales",
+    description: "Quienes buscan beneficios económicos o estatus social sin un compromiso genuino con los valores masónicos."
   },
   {
-    title: "Tienen una mentalidad cerrada o intolerante",
-    description: "Si no estás dispuesto a escuchar, aprender de perspectivas diferentes o respetar opiniones ajenas, nuestra diversidad podría no resonar contigo."
+    title: "Personas Reticentes al Trabajo en Equipo",
+    description: "Aquellos que prefieren trabajar de manera aislada y no valoran la colaboración y el apoyo mutuo."
   },
   {
-    title: "No están comprometidos con su propio crecimiento",
-    description: "La mejora personal requiere esfuerzo y dedicación. Si no estás dispuesto a trabajar en ti mismo, esta comunidad no te ofrecerá lo que buscas."
+    title: "Individuos con Conductas Contrarias a la Ética y la Moral",
+    description: "Personas involucradas en actividades ilícitas o inmorales que contradicen los principios fundamentales de la masonería."
   },
   {
-    title: "Priorizan lo superficial sobre lo significativo",
-    description: "No somos una red social para ganar contactos; somos una red de personas comprometidas con el propósito, el conocimiento y la acción."
+    title: "Quienes Buscan Proselitismo Religioso o Político",
+    description: "La CILE promueve la libertad de pensamiento y no es un espacio para la promoción de agendas religiosas o políticas específicas."
   },
   {
-    title: "Prefieren competir en lugar de colaborar",
-    description: "Nuestra fuerza radica en la hermandad y la cooperación, no en las rivalidades ni en el ego."
+    title: "Personas Impacientes con el Proceso de Crecimiento Personal",
+    description: "Aquellos que no están dispuestos a invertir tiempo y esfuerzo en su desarrollo interno y en la comprensión de las enseñanzas masónicas."
+  },
+  {
+    title: "Individuos con Falta de Compromiso hacia la Comunidad",
+    description: "Personas que no muestran interés en contribuir al bienestar de la sociedad o en participar en actividades filantrópicas."
   }
 ]
 
 export function NotForYouSection() {
   return (
-    <section className="py-16 px-4">
+    <Section title="No es para:">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl font-bold text-white mb-8 text-center">
-          No es para los que..
-        </h2>
         <div className="grid gap-6 md:grid-cols-2">
           {reasons.map((reason, index) => (
-            <Card key={index} className="bg-white/10 border-none">
+            <Card key={index} className="bg-blue-1 border-none shadow-none">
               <CardContent className="p-6">
-                <h3 className="text-xl font-semibold text-white mb-2">
+                <h3 className="text-xl font-semibold text-blue-12 mb-2">
                   {reason.title}
                 </h3>
-                <p className="text-gray-300">
+                <p className="text-blue-12">
                   {reason.description}
                 </p>
               </CardContent>
@@ -51,6 +53,6 @@ export function NotForYouSection() {
           ))}
         </div>
       </div>
-    </section>
+    </Section>
   )
 } 

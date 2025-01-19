@@ -68,7 +68,7 @@ export const CookiePreferencesModal = ({ isOpen, onClose, onSave }: CookiePrefer
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="sm:max-w-[600px] bg-slate-50">
+      <DialogContent className="sm:max-w-[600px] bg-blue-1">
         <DialogHeader>
           <DialogTitle>Personalizar preferencias de cookies</DialogTitle>
           <DialogDescription>

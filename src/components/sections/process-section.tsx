@@ -1,3 +1,5 @@
+import { Section } from "../section"
+
 const processSteps = [
   {
     title: "PRIMER CONTACTO",
@@ -27,26 +29,27 @@ const processSteps = [
 
 export default function ProcessSection() {
   return (
-    <section className="py-20 px-4 bg-[rgba(255,255,255,0.98)] mx-auto rounded mt-20">
+    <Section title="¿CÓMO FUNCIONA?">
       <div className="container mx-auto max-w-6xl">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-          ¿CÓMO FUNCIONA?
-        </h2>
-        <p className="text-lg text-center text-slate-600 mb-12">
-          El proceso es simple pero significativo:
+        
+        <p className="text-lg text-center text-blue-12 mb-12">
+          El proceso es simple, 3 pasos:
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {processSteps.map((step, index) => (
             <div 
               key={index}
-              className="p-6 rounded-lg bg-slate-50"
+              className="p-6 rounded-lg bg-blue-1 relative"
             >
-              <h3 className="text-xl font-bold text-primary mb-6">{step.title}</h3>
+              <div className="absolute -top-8 left-6 text-[64px] font-bold text-blue-4 opacity-90">
+                {index + 1}
+              </div>
+              <h3 className="text-xl font-bold text-blue-12 mb-6 mt-6">{step.title}</h3>
               <ul className="space-y-4">
                 {step.steps.map((item, i) => (
                   <li key={i} className="flex items-start space-x-3">
-                    <span className="text-primary mt-1">•</span>
-                    <span className="text-slate-700">{item}</span>
+                    <span className="text-blue-12 mt-1">•</span>
+                    <span className="text-blue-12">{item}</span>
                   </li>
                 ))}
               </ul>
@@ -54,6 +57,6 @@ export default function ProcessSection() {
           ))}
         </div>
       </div>
-    </section>
+    </Section>
   )
 } 

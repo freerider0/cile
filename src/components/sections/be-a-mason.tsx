@@ -8,22 +8,33 @@ interface MasonicPrinciple {
 }
 
 const principles: MasonicPrinciple[] = [
-  { id: 1, text: "Ser bueno, pero saber que puedes ser incluso mejor." },
-  { id: 2, text: "Creer en ti mismo." },
-  { id: 3, text: "Reconocer que hay cosas más importantes que el dinero." },
-  { id: 4, text: "Provenir de diferentes familias y tratarnos como hermanos." },
-  { id: 5, text: "Vivir en el presente, respetar la historia y colaborar para un futuro mejor." },
-  { id: 6, text: "No solo creer en un mundo mejor, sino trabajar para construirlo." },
-  { id: 7, text: "Formar parte de una comunidad donde crecer es una elección y ayudar es un deber." },
-  { id: 8, text: "Ser parte de algo más grande: un lugar donde los valores nos unen y el propósito nos guía." },
-  { id: 9, text: "Tener principios, vivir con ellos y ayudar a otros a descubrir los suyos." },
-  { id: 10, text: "No importa de dónde vienes, lo que importa es hacia dónde quieres ir." },
-  { id: 11, text: "Encontrar en la diversidad la fortaleza para construir juntos." },
-  { id: 12, text: "Comprometerse con la verdad, el respeto y la colaboración." },
-  { id: 13, text: "Buscar siempre el conocimiento, no para uno mismo, sino para compartirlo con el mundo." },
-  { id: 14, text: "Caminar con humildad, actuar con compasión y pensar con claridad." },
-  { id: 15, text: "Forjar conexiones que duran toda la vida, basadas en confianza y hermandad." },
-  { id: 16, text: "Ser una comunidad donde crecer es una elección y ayudar es un deber." },
+  { id: 1, text: "Creer en ti mismo." },
+  { id: 2, text: "Reconocer que hay cosas más importantes que el dinero." },
+  { id: 3, text: "Provenir de diferentes familias y tratarnos como hermanos." },
+  { id: 4, text: "Vivir en el presente, respetar la historia y colaborar para un futuro mejor." },
+  { id: 5, text: "No solo creer en un mundo mejor, sino trabajar para construirlo." },
+  { id: 6, text: "Formar parte de una comunidad donde crecer es una elección y ayudar es un deber." },
+  { id: 7, text: "Ser parte de algo más grande: un lugar donde los valores nos unen y el propósito nos guía." },
+  { id: 8, text: "Tener principios, vivir con ellos y ayudar a otros a descubrir los suyos." },
+  { id: 9, text: "No importa de dónde vienes, lo que importa es hacia dónde quieres ir." },
+  { id: 10, text: "Encontrar en la diversidad la fortaleza para construir juntos." },
+  { id: 11, text: "Comprometerse con la verdad, el respeto y la colaboración." },
+  { id: 12, text: "Buscar siempre el conocimiento, no para uno mismo, sino para compartirlo con el mundo." },
+  { id: 13, text: "Caminar con humildad, actuar con compasión y pensar con claridad." },
+  { id: 14, text: "Forjar conexiones que duran toda la vida, basadas en confianza y hermandad." },
+  { id: 15, text: "Ser una comunidad donde crecer es una elección y ayudar es un deber." },
+  { id: 16, text: "Descubrir el potencial que llevas dentro." },
+  { id: 17, text: "Formar parte de una tradición ancestral que construye un mundo mejor." },
+  { id: 18, text: "Caminar por el sendero del conocimiento y la virtud." },
+  { id: 19, text: "Trabajar por la paz, la igualdad y la fraternidad entre los seres humanos." },
+  { id: 20, text: "Pertenecer a una hermandad que trasciende fronteras y diferencias." },
+  { id: 21, text: "Aprender a construir templos en tu corazón y en la sociedad." },
+  { id: 22, text: "Un compromiso con los valores más elevados de la humanidad." },
+  { id: 23, text: "Encontrar respuestas profundas mientras haces preguntas esenciales." },
+  { id: 24, text: "Unirte a una comunidad que busca la luz a través del estudio y la reflexión." },
+  { id: 25, text: "Poner tus talentos al servicio del progreso colectivo." },
+  { id: 26, text: "Ser parte de una red global de buscadores de la verdad." },
+  { id: 27, text: "Un desafío personal para convertirte en tu mejor versión." },
 ];
 
 const BackgroundSVG = () => (
@@ -62,13 +73,8 @@ const BackgroundSVG = () => (
 
 export function BeAMason() {
   return (
-    <Section>
-      <div className="mx-auto px-4 text-white">
+    <Section className=" text-white" title="Ser Masón Es..." isDark={true}>
       
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 ">
-          Ser Masón Es...
-        </h2>
-        
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 relative">
         <BackgroundSVG />
           {principles.map((principle) => (
@@ -91,7 +97,6 @@ export function BeAMason() {
             </motion.div>
           ))}
         </div>
-      </div>
     </Section>
   );
 }

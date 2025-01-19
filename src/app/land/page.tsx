@@ -14,6 +14,8 @@ import { Videoslp } from "@/components/sections/videoslp"
 import { HeroText } from "@/components/sections/hero-text"
 import { NotForYouSection } from "@/components/sections/not-for-you-section"
 import { WhyBecomeFreemason } from "@/components/sections/whybecomefreemason"
+import { LogoModern } from "@/components/assets/logo-modern"
+import { ForYouSection } from "@/components/sections/for-you-section"
 
 export const metadata: Metadata = {
   title: "CILE - Francmasonería Moderna",
@@ -22,21 +24,35 @@ export const metadata: Metadata = {
 
 export default function LandingPage() {
   return (
-    <main className="min-h-screen bg-[#002147] max-w-[890px] mx-auto">
+    <main className="min-h-screen  max-w-[890px] mx-auto">
       <HeroSection />
-      <Videoslp />
+
       <HeroText />
+      <LogoModern className="my-10 w-4 h-4 text-yellow-9" />
+
       <WhyBecomeFreemason />
+
+      <LogoModern className="my-10 w-5 h-5 text-yellow-9" />
+
       <BeAMason />
+      <LogoModern className="my-10 w-5 h-5 text-yellow-9" />
+
       <DifferenceSection />
-      <DevelopmentSection />
-      <ConnectionsSection />
-      <ImpactSection />
+      <LogoModern className="my-10 w-5 h-5 text-yellow-9" />
+
+
       <ProcessSection />
-      <BenefitsSection />
+      <LogoModern className="my-10 w-5 h-5 text-yellow-9" />
+
       <TestimonialsSection />
-      <ExcellenceSection />
+      <LogoModern className="my-10 w-5 h-5 text-yellow-9" />
+
+      <ForYouSection />
+      <LogoModern className="my-10 w-5 h-5 text-yellow-9" />
+
       <NotForYouSection />
+      <LogoModern className="my-10 w-5 h-5 text-yellow-9" />
+
       <ContactSection />
      
     </main>

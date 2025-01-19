@@ -36,7 +36,7 @@ export const CookieManager = ({
   return (
     <>
       {showBanner && (
-        <div className="fixed bottom-0 left-0 right-0 bg-gray-100 p-6 shadow-md z-50">
+        <div className="fixed bottom-0 left-0 right-0 bg-gray-100 p-6 shadow-md z-50 bg-blue-1">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-xl font-bold mb-2">Este sitio web utiliza cookies</h2>
             <p className="mb-4">

@@ -40,11 +40,8 @@ export default function ContactSection() {
 
   if (isSuccess) {
     return (
-      <Section className="bg-[rgba(255,255,255,0.98)]">
-        <div className="container mx-auto max-w-2xl text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            ¡Gracias por tu interés!
-          </h2>
+      <Section className="bg-[rgba(255,255,255,0.98)]" title="¡Gracias por tu interés!">
+        
           <p className="text-slate-600 mb-6">
             Hemos recibido tu información correctamente. Nos pondremos en contacto contigo lo antes posible.
           </p>
@@ -54,17 +51,15 @@ export default function ContactSection() {
           >
             Enviar otro mensaje
           </Button>
-        </div>
+       
       </Section>
     )
   }
 
   return (
-    <Section className="bg-[rgba(255,255,255,0.98)]">
-      <div className="container mx-auto max-w-2xl">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">
-          SOLICITA INFORMACIÓN SIN COMPROMISO
-        </h2>
+    <Section className="bg-[rgba(255,255,255,0.98)]" title="SOLICITA INFORMACIÓN SIN COMPROMISO">
+      <div id="contact-form" className="container mx-auto max-w-2xl">
+       
         <form onSubmit={handleSubmit} className="space-y-6">
           <div>
             <Input
@@ -95,7 +90,7 @@ export default function ContactSection() {
           </div>
           <Button 
             type="submit"
-            className="w-full bg-primary hover:bg-primary/90"
+            className="w-full bg-blue-12 hover:bg-blue-11"
             disabled={isSubmitting}
           >
             {isSubmitting ? (
@@ -113,7 +108,7 @@ export default function ContactSection() {
             Tu información será tratada con absoluta confidencialidad. Solo utilizaremos tus datos para contactarte y compartir información relevante sobre nuestros programas. Al enviar este formulario, aceptas nuestra{' '}
             <a 
               href="/politica-de-privacidad"
-              className="text-primary hover:text-primary/80 underline underline-offset-4 font-medium"
+              className="text-blue-12 hover:text-primary/80 underline underline-offset-4 font-medium"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Ver política de privacidad (se abre en una nueva ventana)"
