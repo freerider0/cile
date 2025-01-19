@@ -29,7 +29,7 @@ const processSteps = [
 
 export default function ProcessSection() {
   return (
-    <Section title="¿CÓMO SER MASOÓN?">
+    <Section title="¿CÓMO SER MASÓN?">
       <div className="container mx-auto max-w-6xl">
         
         <p className="text-lg text-center text-blue-12 mb-12">
