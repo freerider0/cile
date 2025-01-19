@@ -1,7 +1,6 @@
 "use client"
 
 import { Section } from "../section"
-import { Card } from "@/components/ui/card"
 
 const valoresMasonicos = [
   "Diferentes edades y generaciones",

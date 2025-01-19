@@ -1,4 +1,3 @@
-import { LogoModern } from "./assets/logo-modern";
 
 interface SectionProps {
     className?: string;
