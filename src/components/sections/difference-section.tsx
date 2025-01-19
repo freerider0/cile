@@ -46,8 +46,8 @@ const differences = [
 export default function DifferenceSection() {
   return (
     <Section className="bg-[rgba(255,255,255,0.98)]" title="¿QUÉ NOS HACE DIFERENTES?">
-      <div className="container mx-auto max-w-6xl">
-        <div className="max-w-4xl mx-auto space-y-6">
+      <div className="container">
+        <div className="space-y-6">
           {differences.map((item, index) => (
             <div 
               key={index}

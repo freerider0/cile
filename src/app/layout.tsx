@@ -18,8 +18,8 @@ export default function RootLayout({
 
   return (
     <html lang="en" className={`${f37WicklowBlack.variable}` }>
-      <body className=" flex flex-col min-h-screen bg-blue-12">
-        <main className="flex-grow ">
+      <body className=" flex flex-col min-h-screen bg-blue-12 text-blue-12">
+        <main className="flex-grow max-w-[890px] m-auto">
           {children}
         </main>
         <Footer />

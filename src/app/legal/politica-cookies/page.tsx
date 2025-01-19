@@ -55,7 +55,7 @@ export const metadata: Metadata = {
 
 export default function CookiePolicyPage() {
   return (
-    <main className="max-w-4xl mx-auto p-6 bg-white text-gray-800">
+    <main className="max-w-4xl mx-auto p-6 bg-blue-1 text-gray-800">
       <h1 className="text-3xl font-bold mb-6">Política de Cookies</h1>
 
       <section className="mb-6">

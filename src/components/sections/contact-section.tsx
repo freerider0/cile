@@ -107,7 +107,7 @@ export default function ContactSection() {
           <p>
             Tu información será tratada con absoluta confidencialidad. Solo utilizaremos tus datos para contactarte y compartir información relevante sobre nuestros programas. Al enviar este formulario, aceptas nuestra{' '}
             <a 
-              href="/politica-de-privacidad"
+              href="/legal/politica-privacidad"
               className="text-blue-12 hover:text-primary/80 underline underline-offset-4 font-medium"
               target="_blank"
               rel="noopener noreferrer"

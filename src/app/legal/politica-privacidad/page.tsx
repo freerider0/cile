@@ -11,7 +11,7 @@ export default function PoliticaPrivacidad() {
   const { entity } = legalInfo
 
   return (
-    <article className="container mx-auto px-4 py-8 prose prose-invert max-w-3xl bg-white text-gray-800">
+    <article className="container mx-auto px-4 py-8 prose prose-invert max-w-3xl bg-blue-1 text-gray-800">
       <h1 className="text-3xl font-bold mb-6">Política de Privacidad</h1>
 
       <p className="text-sm mb-8">

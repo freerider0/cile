@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 
 export default function LandingPage() {
   return (
-    <main className="min-h-screen  max-w-[890px] mx-auto">
+    <main className="min-h-screen  mx-auto">
       <HeroSection />
 
       <HeroText />

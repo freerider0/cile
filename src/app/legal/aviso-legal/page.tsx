@@ -12,7 +12,7 @@ export default function AvisoLegal() {
   const { entity } = legalInfo
 
   return (
-    <article className="container mx-auto px-4 py-8 prose prose-invert max-w-3xl">
+    <article className="container mx-auto px-4 py-8 prose prose-invert max-w-3xl bg-blue-1">
       <h1 className="text-3xl font-bold mb-6">Aviso Legal</h1>
 
       <section className="mb-8">
