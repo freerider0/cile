@@ -13,7 +13,7 @@ import { BeAMason } from "@/components/sections/be-a-mason"
 import { Videoslp } from "@/components/sections/videoslp"
 import { HeroText } from "@/components/sections/hero-text"
 import { NotForYouSection } from "@/components/sections/not-for-you-section"
-
+import { WhyBecomeFreemason } from "@/components/sections/whybecomefreemason"
 
 export const metadata: Metadata = {
   title: "CILE - Francmasonería Moderna",
@@ -26,6 +26,7 @@ export default function LandingPage() {
       <HeroSection />
       <Videoslp />
       <HeroText />
+      <WhyBecomeFreemason />
       <BeAMason />
       <DifferenceSection />
       <DevelopmentSection />

@@ -21,7 +21,7 @@ const testimonials = [
 export default function TestimonialsSection() {
   return (
     <Section>
-      <div className="container mx-auto max-w-6xl">
+      <div className="container mx-auto max-w-6xl text-white">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
           TESTIMONIOS DE TRANSFORMACIÓN
         </h2>
@@ -29,14 +29,14 @@ export default function TestimonialsSection() {
           {testimonials.map((testimonial, index) => (
             <div 
               key={index}
-              className="p-6 rounded-lg bg-slate-50"
+              className="p-6 bg-white/10 rounded-lg"
             >
-              <blockquote className="text-lg text-slate-700 italic mb-4">
+              <blockquote className="text-lg  italic mb-4">
                 &ldquo;{testimonial.quote}&rdquo;
               </blockquote>
               <div className="text-right">
-                <p className="font-semibold text-slate-900">{testimonial.author}</p>
-                <p className="text-slate-600">{testimonial.role}</p>
+                <p className="font-semibold">{testimonial.author}</p>
+                <p className="">{testimonial.role}</p>
               </div>
             </div>
           ))}

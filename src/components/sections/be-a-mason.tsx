@@ -81,7 +81,7 @@ export function BeAMason() {
               className="p-6 text-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300"
             >
               <div className="flex items-start space-x-4">
-                <span className="text-yellow-500 font-semibold text-lg">
+                <span className="text-yellow-8 font-semibold text-lg">
                   {principle.id.toString().padStart(2, "0")}
                 </span>
                 <p className="text-whiteleading-relaxed">

@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import tailwindcssRadixColors from "tailwindcss-radix-colors";
 
 export default {
     darkMode: ["class"],
@@ -61,5 +62,5 @@ export default {
   		}
   	}
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"), tailwindcssRadixColors	],
 } satisfies Config;
